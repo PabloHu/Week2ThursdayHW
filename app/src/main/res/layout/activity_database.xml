@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.week2thursdayhw.DatabaseActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First name"
+        android:layout_weight="1"
+        />
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last name"
+        android:layout_weight="1"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etCell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cell"
+            android:layout_weight="1"
+
+            />
+       <EditText
+           android:id="@+id/etNotes"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:hint="notes"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="databaseAccess"/>
+
+    <Spinner
+        android:id="@+id/spinnerGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnGetData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get"
+        android:onClick="databaseAccess"/>
+    <TextView
+        android:id="@+id/tvGetView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Display Get"/>
+
+
+    <!-- update section -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etFirstNameUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First name"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/etLastNameUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last name"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etCellUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cell"
+            android:layout_weight="1"
+
+            />
+        <EditText
+            android:id="@+id/etNotesUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="notes"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnUpdatetData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="databaseAccess"/>
+
+
+
+    <Button
+        android:id="@+id/btnDeletetData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Current"
+        android:onClick="databaseAccess"/>
+</LinearLayout>

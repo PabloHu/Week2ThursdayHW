@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.week2thursdayhw.FileAccessActivity">
+
+    <EditText
+        android:id="@+id/etFileString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter to save"/>
+    <Button
+        android:id="@+id/btnSaveIntoFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Into File"
+        android:onClick="FileAccess"/>
+    <TextView
+        android:id="@+id/tvFileView"
+        android:hint="Show data from file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnGetFromFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get From File"
+        android:onClick="FileAccess"/>
+
+
+</LinearLayout>
